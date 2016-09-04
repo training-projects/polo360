@@ -1,7 +1,7 @@
 # Polo360 - Portfolio Site
 
 <p align="center">
-    <img src="assets/images/polo360.png" width="1200" />
+    <img src="assets/src/images/general/polo360.png" width="1200" />
 </p>
 
 ### Developers
