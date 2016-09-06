@@ -3479,7 +3479,7 @@ th {
   content: "\e260"; }
 
 /* ----------------------------------------------
-    FONTES
+    FONTS
 ---------------------------------------------- */
 /* 
  *  Owl Carousel - Animate Plugin
@@ -8531,11 +8531,68 @@ button.close {
  *  https://github.com/theandersonn
  ************************************************************************************/
 /*--------------------------------------------------------------
-    MAIN
+    RESET
 --------------------------------------------------------------*/
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:focus {
+  outline: none; }
+
+body {
+  font-size: 16px; }
+
+.container-fluid {
+  padding: 0; }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
 /* ----------------------------------------------
-    CSS PRINCIPAL DO SITE
+    CSS MAIN
 ---------------------------------------------- */
+.container {
+  max-width: 970px;
+  width: 100%; }
+
+.header-box {
+  background: url(../images/bgs/bg-header.png) repeat-x; }
+
+.brand-custom {
+  margin-top: 15px; }
+
+.navbar-default {
+  background-color: transparent; }
+
+.nav-customize {
+  margin-top: 45px; }
+  .nav-customize li {
+    border-left: 1px dotted #E7E6E4; }
+  .nav-customize li a {
+    color: #333;
+    font-size: 0.875em;
+    font-weight: 700;
+    line-height: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase; }
+    .nav-customize li a span {
+      display: block;
+      font-size: 8px;
+      font-weight: normal; }
+
 /* ----------------------------------------------
     MEDIA QUERIES
 ---------------------------------------------- */

@@ -1,3 +1,43 @@
 /* ----------------------------------------------
     CSS MAIN
 ---------------------------------------------- */
+.container {
+	max-width: 970px;
+	width: 100%;
+}
+
+.header-box {
+	background: url(../images/bgs/bg-header.png) repeat-x; 
+}
+
+.brand-custom {
+	margin-top: 15px;
+}
+
+.navbar-default {
+	background-color: transparent;
+}
+
+.nav-customize {
+	margin-top: 45px;
+
+	li {
+		border-left: 1px dotted #E7E6E4;
+	}
+
+	li a{
+		color: #333;
+		font-size: calc-em(14);
+		font-weight: 700;
+		line-height: 14px;
+		padding-top: 5px;
+		padding-bottom: 5px;		
+		text-transform: uppercase;
+	
+		span {
+			display: block;
+			font-size: 8px;
+			font-weight: normal;
+		}
+	}
+}
