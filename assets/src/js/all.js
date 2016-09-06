@@ -17697,7 +17697,7 @@ var functions = {
 		})
     },
 
-	// YouTube Responsivo
+	// Responsive YouTube
 	// ------------------------- 
 	responsiveYouTube: function(){
 		var all_oembed_videos = jQuery("iframe[src*='youtube'], iframe[src*='vimeo']");
@@ -17706,7 +17706,7 @@ var functions = {
 		});
 	},	    	
 
-	// Remove Atributos img
+	// Remove attributes images
 	// -------------------------
 	removeAtributosImg: function(){
 		jQuery('img').each(function(){
