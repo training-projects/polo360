@@ -74,7 +74,7 @@
 }
 
 .slider-tt {
-	margin-top: 50px;
+	margin: 50px 0 15px 0;
 	font-size: 26px;
 	font-weight: 700;
 }
@@ -111,4 +111,35 @@
 	
 	}
 
+}
+
+/* FEATURED BOXES */
+.featured-boxes {
+	border-top: 1px solid #E8E7E5;
+	padding-top: 20px;
+
+	h3 {
+		color: #07769C;
+		font-size: 22px;
+		margin-bottom: 0; 
+	}
+
+	span {
+		color: #4C4C4B;
+		display: inline-block;
+		font-size: 12px;
+		margin-bottom: 15px;
+
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	a {
+		background: url(../images/bgs/btn-bg.png) no-repeat;
+		font-size: 12px;
+		padding: 8px 85px 8px 15px;
+		display: inline-block;
+	}
 }
