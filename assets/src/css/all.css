@@ -8651,6 +8651,7 @@ img {
 /* FEATURED BOXES */
 .featured-boxes {
   border-top: 1px solid #E8E7E5;
+  margin-bottom: 30px;
   padding-top: 20px; }
   .featured-boxes h3 {
     color: #07769C;
@@ -8666,8 +8667,83 @@ img {
   .featured-boxes a {
     background: url(../images/bgs/btn-bg.png) no-repeat;
     font-size: 12px;
-    padding: 8px 85px 8px 15px;
+    padding: 8px 87px 8px 15px;
     display: inline-block; }
+
+/* SOCIAL CONNECTION */
+.form-custom {
+  font-size: 10px;
+  margin-bottom: 15px; }
+
+.form-custom:focus {
+  border-color: #777;
+  box-shadow: none; }
+
+.btn-custom-blue {
+  background: url(../images/bgs/bg-button-blue.png) no-repeat;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 110px 8px 15px;
+  display: inline-block; }
+
+.bold {
+  font-weight: 700; }
+
+.social-connection {
+  border-top: 1px solid #E8E7E5;
+  padding-top: 20px; }
+  .social-connection .social-tt {
+    border-bottom: 1px dashed #bcbaba;
+    font-size: 18px;
+    padding-bottom: 7px; }
+  .social-connection .social-pp {
+    font-size: 12px; }
+  .social-connection .networks {
+    margin-bottom: 25px;
+    display: inline-block; }
+    .social-connection .networks li {
+      float: left;
+      margin-left: 2px; }
+    .social-connection .networks li:first-child {
+      margin-left: 0; }
+
+.social .btn-custom-blue {
+  padding: 8px 97px 8px 15px; }
+
+.social .btn-custom-blue:hover {
+  background-color: none;
+  color: #fff;
+  text-decoration: underline; }
+
+.contact .btn-custom-blue:hover {
+  background-color: none;
+  color: #fff;
+  text-decoration: underline; }
+
+.updates .updates-news {
+  margin-bottom: 7px;
+  display: inline-block; }
+  .updates .updates-news li {
+    border-bottom: 1px dashed #bcbaba;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+  .updates .updates-news .news-thumb {
+    float: left;
+    line-height: 0px;
+    margin: 0 7px 0 0; }
+  .updates .updates-news .news-pp {
+    color: #333;
+    font-size: 12px;
+    margin-bottom: 0; }
+
+.updates .updates-btn {
+  background: url(../images/bgs/bg-button-blue.png) no-repeat;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  padding: 8px 87px 8px 15px; }
 
 /* ----------------------------------------------
     MEDIA QUERIES
