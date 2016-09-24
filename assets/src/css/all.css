@@ -8560,28 +8560,41 @@ img {
   max-width: 100%;
   height: auto; }
 
-/* ----------------------------------------------
-    CSS MAIN
----------------------------------------------- */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# general
+# home
+	## header
+	## slider
+	## featured box
+	## networking
+	## footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+	# GENERAL
+---------------------------------------------------------------*/
 .container {
   max-width: 970px;
   width: 100%; }
 
+/*--------------------------------------------------------------
+	# HOME ## HEADER
+---------------------------------------------------------------*/
 .header-box {
   background: url(../images/bgs/bg-header.png) repeat-x;
   margin-bottom: 50px; }
 
-.brand-custom {
-  margin-top: 15px; }
-
 .navbar-default {
   background-color: transparent; }
 
-.nav-customize {
+.navbar-header > .brand {
+  margin-top: 15px; }
+
+.navbar-main {
   margin-top: 45px; }
-  .nav-customize li {
-    border-left: 1px dotted #E7E6E4; }
-  .nav-customize li a {
+  .navbar-main .item {
+    border-left: 1px dotted #E7E6E4;
     color: #333;
     font-size: 0.875em;
     font-weight: 700;
@@ -8589,13 +8602,15 @@ img {
     padding-top: 5px;
     padding-bottom: 5px;
     text-transform: uppercase; }
-    .nav-customize li a span {
-      display: block;
-      font-size: 8px;
-      font-weight: normal; }
+  .navbar-main .tagline {
+    display: block;
+    font-size: 8px;
+    font-weight: normal; }
 
-/* SLIDER */
-.slider-bg {
+/*--------------------------------------------------------------
+	# HOME ## SLIDER
+---------------------------------------------------------------*/
+.slider-home {
   background: #1a1a1a;
   /* Old browsers */
   background: -moz-linear-gradient(top, #1a1a1a 0%, #292929 50%, #333333 100%);
@@ -8609,66 +8624,106 @@ img {
   position: relative;
   width: 100%;
   padding-bottom: 335px; }
+  .slider-home > .shadow {
+    position: absolute;
+    left: 50%;
+    margin-left: -435px;
+    bottom: -45px; }
+  .slider-home ~ .title {
+    margin: 50px 0 15px 0;
+    font-size: 26px;
+    font-weight: 700; }
 
-.slider-box {
+.slider-highlights {
   position: absolute;
   max-width: 940px;
   top: 25px; }
+  .slider-highlights .thumb {
+    border: 1px solid #c6c6c6;
+    border-radius: 12px;
+    display: block; }
+  .slider-highlights.owl-theme .owl-dots .owl-dot span {
+    background-color: #E7E6E4;
+    border: 3px solid #020302;
+    padding: 4px; }
+  .slider-highlights.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #E7E6E4;
+    padding: 4px; }
+  .slider-highlights.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #4ADBFB;
+    padding: 4px; }
+  .slider-highlights > .owl-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 15px; }
 
-.slider-thumb {
-  border: 1px solid #c6c6c6;
-  border-radius: 12px; }
-
-.slider-shadow {
-  position: absolute;
-  left: 50%;
-  margin-left: -435px;
-  bottom: -45px; }
-
-.slider-tt {
-  margin: 50px 0 15px 0;
-  font-size: 26px;
-  font-weight: 700; }
-
-.owl-controls {
-  position: absolute;
-  bottom: 10px;
-  left: 15px; }
-
-.slider .owl-theme .owl-dots .owl-dot span {
-  background-color: #E7E6E4;
-  border: 3px solid #020302;
-  padding: 4px; }
-
-.slider .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #E7E6E4;
-  padding: 4px; }
-
-.slider .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #4ADBFB;
-  padding: 4px; }
-
-/* FEATURED BOXES */
-.featured-boxes {
+/*--------------------------------------------------------------
+	# HOME ## FEATURED BOXES
+---------------------------------------------------------------*/
+.featured-container {
   border-top: 1px solid #E8E7E5;
   margin-bottom: 30px;
   padding-top: 20px; }
-  .featured-boxes h3 {
-    color: #07769C;
-    font-size: 22px;
-    margin-bottom: 0; }
-  .featured-boxes span {
-    color: #4C4C4B;
-    display: inline-block;
-    font-size: 12px;
-    margin-bottom: 15px; }
-  .featured-boxes p {
-    font-size: 15px; }
-  .featured-boxes a {
-    background: url(../images/bgs/btn-bg.png) no-repeat;
-    font-size: 12px;
-    padding: 8px 87px 8px 15px;
-    display: inline-block; }
+
+.featured-box > .title {
+  color: #07769C;
+  font-size: 22px;
+  margin-bottom: 0; }
+
+.featured-box > .tagline {
+  color: #4C4C4B;
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 15px; }
+
+.featured-box > .description {
+  font-size: 15px; }
+
+.featured-box > .learnmore {
+  background: url(../images/bgs/btn-bg.png) no-repeat;
+  font-size: 12px;
+  padding: 8px 87px 8px 15px;
+  display: inline-block; }
+
+/*--------------------------------------------------------------
+	# HOME ## NETWORKING
+---------------------------------------------------------------*/
+.networking-container {
+  border-top: 1px solid #E8E7E5;
+  padding-top: 20px; }
+
+.social-connection > .title {
+  border-bottom: 1px dashed #bcbaba;
+  font-size: 18px;
+  padding-bottom: 7px; }
+
+.social-connection > .description {
+  font-size: 12px; }
+
+.social-connection > .social-networks {
+  margin-bottom: 30px;
+  display: inline-block; }
+
+.social-connection > .btn-custom-blue {
+  padding: 8px 97px 8px 15px; }
+
+.social-connection > .btn-custom-blue:hover {
+  background-color: none;
+  color: #fff;
+  text-decoration: underline; }
+
+.social-connection > .updates-btn {
+  background: url(../images/bgs/bg-button-blue.png) no-repeat;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  padding: 8px 87px 8px 15px; }
+
+.social-box .item, .social-connection > .social-networks .item {
+  float: left;
+  margin-left: 2px; }
+  .social-box .item:first-child, .social-connection > .social-networks .item:first-child {
+    margin-left: 0; }
 
 /* SOCIAL CONNECTION */
 .form-custom {
@@ -8690,63 +8745,28 @@ img {
 .bold {
   font-weight: 700; }
 
-.social-connection {
-  border-top: 1px solid #E8E7E5;
-  padding-top: 20px; }
-  .social-connection .social-tt {
-    border-bottom: 1px dashed #bcbaba;
-    font-size: 18px;
-    padding-bottom: 7px; }
-  .social-connection .social-pp {
-    font-size: 12px; }
-  .social-connection .networks {
-    margin-bottom: 30px;
-    display: inline-block; }
-    .social-connection .networks li {
-      float: left;
-      margin-left: 2px; }
-    .social-connection .networks li:first-child {
-      margin-left: 0; }
-
-.social .btn-custom-blue {
-  padding: 8px 97px 8px 15px; }
-
-.social .btn-custom-blue:hover {
-  background-color: none;
-  color: #fff;
-  text-decoration: underline; }
-
-.contact .btn-custom-blue:hover {
-  background-color: none;
-  color: #fff;
-  text-decoration: underline; }
-
-.updates .updates-news {
+.updates-news {
   margin-bottom: 7px;
   display: inline-block; }
-  .updates .updates-news li {
+  .updates-news > .item {
     border-bottom: 1px dashed #bcbaba;
     float: left;
     padding-bottom: 10px;
     padding-top: 10px; }
-  .updates .updates-news .news-thumb {
-    float: left;
-    line-height: 0px;
-    margin: 0 7px 0 0; }
-  .updates .updates-news .news-pp {
-    color: #333;
-    font-size: 12px;
-    margin-bottom: 0; }
+    .updates-news > .item .thumb {
+      float: left;
+      line-height: 0px;
+      margin: 0 7px 0 0; }
+    .updates-news > .item .description {
+      color: #333;
+      font-size: 12px;
+      margin-bottom: 0; }
 
-.updates .updates-btn {
-  background: url(../images/bgs/bg-button-blue.png) no-repeat;
-  color: #fff;
-  display: inline-block;
-  font-size: 12px;
-  padding: 8px 87px 8px 15px; }
-
+/*--------------------------------------------------------------
+	# HOME ## FOOTER
+---------------------------------------------------------------*/
 /* FOOTER */
-footer {
+.footer {
   background-color: #333;
   border-top: 10px solid #4c4c4c;
   margin-top: 30px;
@@ -8757,17 +8777,15 @@ footer {
   font-size: 13px;
   margin-top: 15px; }
 
-.footer-menu li {
+.footer-menu > .item {
   border-left: 1px solid #999;
   float: left;
   font-size: 13px;
   padding: 0 6px; }
-
-.footer-menu li:first-child {
-  border-left: 0; }
-
-.footer-menu li a {
-  color: #999; }
+  .footer-menu > .item:first-child {
+    border-left: 0; }
+  .footer-menu > .item .link {
+    color: #999; }
 
 /* ----------------------------------------------
     MEDIA QUERIES
