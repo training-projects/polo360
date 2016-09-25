@@ -37,15 +37,23 @@
 .navbar-main {
 	margin-top: 45px;
 
-	& .item {
+	> .item {
 		border-left: 1px dotted #E7E6E4;
-		color: #333;
-		font-size: calc-em(14);
-		font-weight: 700;
-		line-height: 14px;
 		padding-top: 5px;
 		padding-bottom: 5px;		
+	}
+
+	> .item > .link {
+		color: #777;
+		font-size: calc-em(14);
+		font-weight: 700;
+		line-height: 14px;		
+		text-decoration: none;
 		text-transform: uppercase;
+
+		&:hover {
+			color: #333;
+		}
 	}
 
 	& .tagline {
@@ -127,7 +135,7 @@
 }
 
 /*--------------------------------------------------------------
-	# HOME ## FEATURED BOXES
+	# HOME ## FEATURED BOX
 ---------------------------------------------------------------*/
 .featured-container {
 	border-top: 1px solid #E8E7E5;
@@ -151,14 +159,16 @@
 	}
 
 	> .description {
-		font-size: 15px;
+		color: #333;
+		font-size: 14px;
 	}
 
 	> .learnmore {
+		@extend .btncustom;
+
 		background: url(../images/bgs/btn-bg.png) no-repeat;
-		font-size: 12px;
-		padding: 8px 87px 8px 15px;
-		display: inline-block;
+		color: #337ab7;
+		padding: 9px 87px 10px 15px;
 	}
 }
 
@@ -188,40 +198,32 @@
 		margin-bottom: 30px;
 		display: inline-block;
 	}
-	
 
-	> .btn-custom-blue {
-		padding: 8px 97px 8px 15px;
-	}
+	& .btnnews {
+		@extend .btncustom;
 
-	> .btn-custom-blue:hover {
-		background-color: none;
-		color: #fff;
-		text-decoration: underline;
-	}
-
-	> .updates-btn {
 		background: url(../images/bgs/bg-button-blue.png) no-repeat;
-		color: #fff;	
-		display: inline-block;		
-		font-size: 12px;
-		padding: 8px 87px 8px 15px;
+		color: #fff;
+		padding: 8px 94px 8px 15px;		
+	}
+
+	& .btncontact {
+		@extend .btncustom;
+
+		background: url(../images/bgs/bg-button-blue.png) no-repeat;
+		color: #fff;
+		padding: 8px 109px 8px 15px;				
+	}
+
+	& .btnupdates {
+		@extend .btncustom;	
+		
+		background: url(../images/bgs/bg-button-blue.png) no-repeat;
+		color: #fff;
+		padding: 8px 78px 8px 15px;			
 	}	
 
 }
-
-.social-box {
-	.item {
-		float: left;
-		margin-left: 2px;
-	
-		&:first-child {
-			margin-left: 0;
-		}		
-
-	}
-}
-
 
 /* SOCIAL CONNECTION */
 .form-custom {
@@ -232,15 +234,6 @@
 .form-custom:focus {
 	border-color: #777;
 	box-shadow: none;
-}
-
-.btn-custom-blue {
-	background: url(../images/bgs/bg-button-blue.png) no-repeat;
-	border: none;
-	color: #fff;
-	font-size: 12px;
-	padding: 8px 110px 8px 15px;
-	display: inline-block;
 }
 
 .bold {
@@ -267,6 +260,11 @@
 			color: #333;
 			font-size: 12px;
 			margin-bottom: 0;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}					
 	}
  		

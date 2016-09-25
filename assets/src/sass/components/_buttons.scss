@@ -1,0 +1,9 @@
+.btncustom {
+	font-size: 12px;
+	display: inline-block;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}	
+}

@@ -1,0 +1,11 @@
+.social-box {
+	.item {
+		float: left;
+		margin-left: 2px;
+	
+		&:first-child {
+			margin-left: 0;
+		}		
+
+	}
+}
