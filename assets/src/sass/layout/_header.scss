@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+	HEADER
+---------------------------------------------------------------*/
+.header-container {
+	background: url(../images/bgs/bg-header.png) repeat-x;
+	margin-bottom: 50px; 
+}
+
+.navbar-default {
+	background-color: transparent;
+}
+
+.navbar-header {
+	> .brand { margin-top: 15px; }
+}
+
+.navbar-main {
+	margin-top: 45px;
+
+	> .item {
+		border-left: 1px dotted #E7E6E4;
+		padding-top: 5px;
+		padding-bottom: 5px;		
+	}
+
+	> .item > .link {
+		color: #777;
+		font-size: calc-em(14);
+		font-weight: 700;
+		line-height: 14px;		
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover {
+			color: #333;
+		}
+	}
+
+	& .tagline {
+		display: block;
+		font-size: 8px;
+		font-weight: normal;
+	}
+}
