@@ -1,3 +1,13 @@
 /* ----------------------------------------------
-    FORMULÁRIOS
+    HOME > FORMS
 ---------------------------------------------- */
+.form-custom {
+	font-size: 10px;
+	line-height: 15px;
+	margin-bottom: 15px;	
+}
+
+.form-custom:focus {
+	border-color: #777;
+	box-shadow: none;
+}

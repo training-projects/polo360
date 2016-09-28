@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+	FOOTER
+---------------------------------------------------------------*/
+.footer {
+	background-color: #333;
+	border-top: 10px solid #4c4c4c;
+	margin-top: 30px;
+	padding-bottom: 100px;
+}
+
+.footer-tt {
+	color: #999;
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+.footer-menu {
+	> .item {
+		border-left: 1px solid #999;
+		float: left;
+		font-size: 13px;
+		padding: 0 6px;
+
+		&:first-child {
+			border-left: 0;
+		}	
+
+		& .link {
+			color: #999;
+		}	
+
+	}
+}
