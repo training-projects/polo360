@@ -8,23 +8,26 @@
 }
 
 .featured-box {
+	margin: 0 auto;
+	max-width: 294px;
+
 	> .title {
 		color: #07769C;
-		font-size: 22px;
+		font-size: calc-em(22);
 		margin-bottom: 0; 
 	}
 
 	> .tagline {
 		color: #4C4C4B;
 		display: inline-block;
-		font-size: 12px;
-		margin-bottom: 15px;
+		font-size: calc-em(12);
+		margin-bottom: calc-mg(15px, 294px);
 
 	}
 
 	> .description {
 		color: #333;
-		font-size: 14px;
+		font-size: calc-em(14);
 	}
 }
 
@@ -33,54 +36,57 @@
 ---------------------------------------------------------------*/
 .networking-container {
 	border-top: 1px solid #E8E7E5;
-	padding-top: 20px;	
+	padding-top: calc-mg(20px, 940px);	
 }
 
 .social-connection {
+	margin: 0 auto;
+	max-width: 294px;	
 
 	> .title {
 		border-bottom: 1px dashed #bcbaba;
-		font-size: 18px;
-		padding-bottom: 7px;
+		font-size: calc-em(18);
+		padding-bottom: calc-mg(7px, 294px);
 	}
 
 	> .description {
-		font-size: 12px;		
+		font-size: calc-em(12);		
 	}
 
 
 	> .social-networks {
 		@extend .social-box;
-		margin-bottom: 30px;
+		margin-bottom: calc-mg(30px, 294px);
 		display: inline-block;
+
+		@media #{$screen-sm-max} {
+			.item {
+				max-width: 40px;
+			}
+		}			
 	}
 
 }
 
 /* SOCIAL CONNECTION */
-.bold {
-	font-weight: 700;
-}
-
 .updates-news {
-	margin-bottom: 7px;
+	margin-bottom: calc-mg(7px, 294px);
 	display: inline-block;
 
 	> .item {
 		border-bottom: 1px dashed #bcbaba;	
-		float: left;			
-		padding-bottom: 10px;	
-		padding-top: 10px;
+		float: left;
+		padding: calc-mg(10px, 294px) 0; 			
 
 		& .thumb {
 			float: left;
 			line-height: 0px;
-			margin: 0 7px 0 0;
+			margin: 0 calc-mg(7px, 294px) 0 0;
 		}
 
 		& .description {
 			color: #333;
-			font-size: 12px;
+			font-size: calc-em(12);
 			margin-bottom: 0;
 			text-decoration: none;
 
