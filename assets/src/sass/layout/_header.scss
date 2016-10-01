@@ -3,24 +3,44 @@
 ---------------------------------------------------------------*/
 .header-container {
 	background: url(../images/bgs/bg-header.png) repeat-x;
-	margin-bottom: 50px; 
+	padding-bottom: 35px;
+
+	@media #{$screen-sm-max} {
+		padding-bottom: 35px;
+	}	
 }
 
 .navbar-default {
 	background-color: transparent;
+
+	> .navbar-collapse {
+		margin-top: 30px;
+	}
 }
 
 .navbar-header {
-	> .brand { margin-top: 15px; }
+	> .navbar-toggle {
+		margin-top: 35px;	
+	}
+
+	> .brand {
+		padding-top: 30px;
+
+		@media #{$screen-sm-max} {
+			max-width: 245px;
+		}		
+	}
 }
 
 .navbar-main {
-	margin-top: 45px;
-
 	> .item {
 		border-left: 1px dotted #E7E6E4;
-		padding-top: 5px;
-		padding-bottom: 5px;		
+		padding: 5px 0  5px 0;	
+
+		@media #{$screen-sm-max} {
+			border-left: none;
+			padding: 0;
+		}	
 	}
 
 	> .item > .link {
@@ -33,12 +53,18 @@
 
 		&:hover {
 			color: #333;
+
+			@media #{$screen-sm-max} {
+				background-color: #333;
+				border-radius: 4px;	
+				color: #fff;
+			}
 		}
 	}
 
 	& .tagline {
 		display: block;
-		font-size: 8px;
+		font-size: calc-em(8);
 		font-weight: normal;
 	}
 }

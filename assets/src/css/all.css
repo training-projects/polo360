@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /************************************************************************************!
  *  FONT AWESOME
  ************************************************************************************/
@@ -3516,6 +3515,36 @@ a:visited,
 button:focus {
   outline: 0 none !important; }
 
+/*--------------------------------------------------------------
+ADJUSTS BREAKPOINT NAVBAR TOGGLE
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none; }
+  .navbar-left,
+  .navbar-right {
+    float: none !important; }
+  .navbar-toggle {
+    display: block; }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+  .navbar-nav > li {
+    float: none; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .collapse.in {
+    display: block !important; } }
+
 /* COMPONENTS */
 .btnwhite {
   background: url(../images/bgs/btn-bg.png) no-repeat;
@@ -3620,8 +3649,10 @@ button:focus {
 /* Calcula porcentagem de margens e paddings */
 /* Converte as fontes para em */
 /* ----------------------------------------------
-    VARIÁVEIS
+    VARIABLES
 ---------------------------------------------- */
+/* Media Queries
+// -------------------------------------------- */
 /* ----------------------------------------------
     MIXINS
 ---------------------------------------------- */
@@ -3631,33 +3662,52 @@ button:focus {
 ---------------------------------------------------------------*/
 .header-container {
   background: url(../images/bgs/bg-header.png) repeat-x;
-  margin-bottom: 50px; }
+  padding-bottom: 35px; }
+  @media (max-width: 991px) {
+    .header-container {
+      padding-bottom: 35px; } }
 
 .navbar-default {
   background-color: transparent; }
+  .navbar-default > .navbar-collapse {
+    margin-top: 30px; }
+
+.navbar-header > .navbar-toggle {
+  margin-top: 35px; }
 
 .navbar-header > .brand {
-  margin-top: 15px; }
+  padding-top: 30px; }
+  @media (max-width: 991px) {
+    .navbar-header > .brand {
+      max-width: 245px; } }
 
-.navbar-main {
-  margin-top: 45px; }
-  .navbar-main > .item {
-    border-left: 1px dotted #E7E6E4;
-    padding-top: 5px;
-    padding-bottom: 5px; }
-  .navbar-main > .item > .link {
-    color: #777;
-    font-size: 0.875em;
-    font-weight: 700;
-    line-height: 14px;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .navbar-main > .item > .link:hover {
-      color: #333; }
-  .navbar-main .tagline {
-    display: block;
-    font-size: 8px;
-    font-weight: normal; }
+.navbar-main > .item {
+  border-left: 1px dotted #E7E6E4;
+  padding: 5px 0  5px 0; }
+  @media (max-width: 991px) {
+    .navbar-main > .item {
+      border-left: none;
+      padding: 0; } }
+
+.navbar-main > .item > .link {
+  color: #777;
+  font-size: 0.875em;
+  font-weight: 700;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .navbar-main > .item > .link:hover {
+    color: #333; }
+    @media (max-width: 991px) {
+      .navbar-main > .item > .link:hover {
+        background-color: #333;
+        border-radius: 4px;
+        color: #fff; } }
+
+.navbar-main .tagline {
+  display: block;
+  font-size: 0.5em;
+  font-weight: normal; }
 
 /*--------------------------------------------------------------
 	FOOTER
