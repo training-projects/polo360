@@ -7,20 +7,28 @@
 	background: -webkit-linear-gradient(top,  #1a1a1a 0%,#292929 50%,#333333 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  #1a1a1a 0%,#292929 50%,#333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+	margin-bottom: calc-mg(30px, 940px);
 	position: relative;
 	width: 100%;
 	padding-bottom: 335px;
 
-	> .shadow {
+	@media #{$screen-sm-max} {
+		padding: 6px 0;
+	}	
+
+	& .shadow {
 		position: absolute;
 		left: 50%;
 		margin-left: -435px;
 		bottom: -45px;
+	
+		@media #{$screen-sm-max} {
+			display: none;
+		}					
 	}
 
 	~ .title {
-		margin: 50px 0 15px 0;
-		font-size: 26px;
+		font-size: calc-em(26);
 		font-weight: 700;
 	}	
 
@@ -30,6 +38,10 @@
 	position: absolute;
 	max-width: 940px;
 	top: 25px;
+
+	@media #{$screen-sm-max} {
+		position: static;
+	}
 
 	& .thumb {
 		border: 1px solid #c6c6c6;
@@ -63,8 +75,13 @@
 
 	> .owl-controls {
 		position: absolute;
-		bottom: 10px;
-		left: 15px;	
+		bottom: calc-mg(10px, 940px);
+		left: calc-mg(15px, 940px);	
+
+		@media #{$screen-sm-max} {
+			margin: 0 auto;
+			width: 100%;
+		}					
 	}		
 
 }

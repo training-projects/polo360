@@ -10,8 +10,9 @@
 	        autoplayTimeout: 7000,
 	        autoplay: true,
 	        nav: false,
-	        loop: true  
+	        loop: true 
 		})
 	});
 
 }( jQuery ));
+

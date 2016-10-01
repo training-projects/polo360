@@ -84,6 +84,11 @@
  *  MY CUSTOM STYLES @theandersonn \o/
  ************************************************************************************/ 
 
+/* HELPERS */
+@import 'helpers/functions';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
 /* BASE */
 /* @import 'base/fonts'; */
 @import 'base/fonts';
@@ -94,11 +99,6 @@
 @import 'components/forms';
 @import 'components/navigation';
 @import 'components/sliders';
-
-/* HELPERS */
-@import 'helpers/functions';
-@import 'helpers/variables';
-@import 'helpers/mixins';
 
 /* LAYOUT */
 @import 'layout/header';

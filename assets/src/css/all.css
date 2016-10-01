@@ -3478,6 +3478,20 @@ a.thumbnail.active {
 /************************************************************************************!
  *  MY CUSTOM STYLES @theandersonn \o/
  ************************************************************************************/
+/* HELPERS */
+/* ----------------------------------------------
+    FUNCTIONS
+---------------------------------------------- */
+/* Calcula porcentagem de margens e paddings */
+/* Converte as fontes para em */
+/* ----------------------------------------------
+    VARIABLES
+---------------------------------------------- */
+/* Media Queries
+// -------------------------------------------- */
+/* ----------------------------------------------
+    MIXINS
+---------------------------------------------- */
 /* BASE */
 /* @import 'base/fonts'; */
 /* ----------------------------------------------
@@ -3606,23 +3620,32 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#333333',GradientType=0 );
   /* IE6-9 */
+  margin-bottom: 3.19149%;
   position: relative;
   width: 100%;
   padding-bottom: 335px; }
-  .slider-home > .shadow {
+  @media (max-width: 991px) {
+    .slider-home {
+      padding: 6px 0; } }
+  .slider-home .shadow {
     position: absolute;
     left: 50%;
     margin-left: -435px;
     bottom: -45px; }
+    @media (max-width: 991px) {
+      .slider-home .shadow {
+        display: none; } }
   .slider-home ~ .title {
-    margin: 50px 0 15px 0;
-    font-size: 26px;
+    font-size: 1.625em;
     font-weight: 700; }
 
 .slider-highlights {
   position: absolute;
   max-width: 940px;
   top: 25px; }
+  @media (max-width: 991px) {
+    .slider-highlights {
+      position: static; } }
   .slider-highlights .thumb {
     border: 1px solid #c6c6c6;
     border-radius: 12px;
@@ -3639,23 +3662,13 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
     padding: 4px; }
   .slider-highlights > .owl-controls {
     position: absolute;
-    bottom: 10px;
-    left: 15px; }
+    bottom: 1.06383%;
+    left: 1.59574%; }
+    @media (max-width: 991px) {
+      .slider-highlights > .owl-controls {
+        margin: 0 auto;
+        width: 100%; } }
 
-/* HELPERS */
-/* ----------------------------------------------
-    FUNCTIONS
----------------------------------------------- */
-/* Calcula porcentagem de margens e paddings */
-/* Converte as fontes para em */
-/* ----------------------------------------------
-    VARIABLES
----------------------------------------------- */
-/* Media Queries
-// -------------------------------------------- */
-/* ----------------------------------------------
-    MIXINS
----------------------------------------------- */
 /* LAYOUT */
 /*--------------------------------------------------------------
 	HEADER
@@ -3701,7 +3714,7 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
     @media (max-width: 991px) {
       .navbar-main > .item > .link:hover {
         background-color: #333;
-        border-radius: 4px;
+        border-radius: 2px;
         color: #fff; } }
 
 .navbar-main .tagline {
@@ -3741,6 +3754,9 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
   max-width: 970px;
   width: 100%; }
 
+.bold {
+  font-weight: 700; }
+
 /*--------------------------------------------------------------
 	# HOME ## FEATURED BOX
 ---------------------------------------------------------------*/
@@ -3749,59 +3765,60 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
   margin-bottom: 30px;
   padding-top: 20px; }
 
-.featured-box > .title {
-  color: #07769C;
-  font-size: 22px;
-  margin-bottom: 0; }
-
-.featured-box > .tagline {
-  color: #4C4C4B;
-  display: inline-block;
-  font-size: 12px;
-  margin-bottom: 15px; }
-
-.featured-box > .description {
-  color: #333;
-  font-size: 14px; }
+.featured-box {
+  margin: 0 auto;
+  max-width: 294px; }
+  .featured-box > .title {
+    color: #07769C;
+    font-size: 1.375em;
+    margin-bottom: 0; }
+  .featured-box > .tagline {
+    color: #4C4C4B;
+    display: inline-block;
+    font-size: 0.75em;
+    margin-bottom: 5.10204%; }
+  .featured-box > .description {
+    color: #333;
+    font-size: 0.875em; }
 
 /*--------------------------------------------------------------
 	# HOME ## NETWORKING
 ---------------------------------------------------------------*/
 .networking-container {
   border-top: 1px solid #E8E7E5;
-  padding-top: 20px; }
+  padding-top: 2.12766%; }
 
-.social-connection > .title {
-  border-bottom: 1px dashed #bcbaba;
-  font-size: 18px;
-  padding-bottom: 7px; }
-
-.social-connection > .description {
-  font-size: 12px; }
-
-.social-connection > .social-networks {
-  margin-bottom: 30px;
-  display: inline-block; }
+.social-connection {
+  margin: 0 auto;
+  max-width: 294px; }
+  .social-connection > .title {
+    border-bottom: 1px dashed #bcbaba;
+    font-size: 1.125em;
+    padding-bottom: 2.38095%; }
+  .social-connection > .description {
+    font-size: 0.75em; }
+  .social-connection > .social-networks {
+    margin-bottom: 10.20408%;
+    display: inline-block; }
+    @media (max-width: 991px) {
+      .social-connection > .social-networks .item {
+        max-width: 40px; } }
 
 /* SOCIAL CONNECTION */
-.bold {
-  font-weight: 700; }
-
 .updates-news {
-  margin-bottom: 7px;
+  margin-bottom: 2.38095%;
   display: inline-block; }
   .updates-news > .item {
     border-bottom: 1px dashed #bcbaba;
     float: left;
-    padding-bottom: 10px;
-    padding-top: 10px; }
+    padding: 3.40136% 0; }
     .updates-news > .item .thumb {
       float: left;
       line-height: 0px;
-      margin: 0 7px 0 0; }
+      margin: 0 2.38095% 0 0; }
     .updates-news > .item .description {
       color: #333;
-      font-size: 12px;
+      font-size: 0.75em;
       margin-bottom: 0;
       text-decoration: none; }
       .updates-news > .item .description:hover {
