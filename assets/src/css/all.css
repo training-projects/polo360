@@ -3482,8 +3482,8 @@ a.thumbnail.active {
 /* ----------------------------------------------
     FUNCTIONS
 ---------------------------------------------- */
-/* Calcula porcentagem de margens e paddings */
-/* Converte as fontes para em */
+/* Calculate percentage margins and paddings */
+/* Converted to px form em */
 /* ----------------------------------------------
     VARIABLES
 ---------------------------------------------- */
@@ -3595,10 +3595,9 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
   font-size: 10px;
   line-height: 15px;
   margin-bottom: 15px; }
-
-.form-custom:focus {
-  border-color: #777;
-  box-shadow: none; }
+  .form-custom:focus {
+    border-color: #777;
+    box-shadow: none; }
 
 .social-box .item, .social-connection > .social-networks .item {
   float: left;
@@ -3649,7 +3648,8 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
   .slider-highlights .thumb {
     border: 1px solid #c6c6c6;
     border-radius: 12px;
-    display: block; }
+    display: block;
+    width: 50%; }
   .slider-highlights.owl-theme .owl-dots .owl-dot span {
     background-color: #E7E6E4;
     border: 3px solid #020302;
@@ -3667,7 +3667,7 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
     @media (max-width: 991px) {
       .slider-highlights > .owl-controls {
         margin: 0 auto;
-        width: 100%; } }
+        width: 96%; } }
 
 /* LAYOUT */
 /*--------------------------------------------------------------
