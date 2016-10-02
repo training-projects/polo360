@@ -58,7 +58,7 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
     .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
-  }
+    }
     
     .navbar-collapse.collapse {
         display: none !important;
@@ -66,8 +66,8 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
     
     .navbar-nav {
         float: none !important;
-    margin-top: 7.5px;
-  }
+        margin-top: 7.5px;
+    }
   
     .navbar-nav > li {
         float: none;
@@ -80,5 +80,6 @@ ADJUSTS BREAKPOINT NAVBAR TOGGLE
     
     .collapse.in {
       display: block !important;
-  }
+    }
 }
+
